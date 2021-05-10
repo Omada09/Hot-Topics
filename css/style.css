@@ -1,1 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=DM+Serif+Text:ital@0;1&family=New+Tegomin&family=Oswald:wght@200;300;400;500;600;700&family=Rock+Salt&display=swap');
+
+/*
+font-family: 'DM Serif Text', serif;
+font-family: 'New Tegomin', serif;
+font-family: 'Abel', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Rock Salt', cursive;
+*/
+
+/* CSS HEX */
+/*
+--dark-olive-green: #646635ff;
+--davys-grey: #494949ff;
+--blood-red: #700708ff;
+--platinum: #e8e8e8ff;
+--golden-brown: #8f642cff;
+*/
+
+/* SCSS RGB */
+/*
+$dark-olive-green: rgba(100, 102, 53, 1);
+$davys-grey: rgba(73, 73, 73, 1);
+$blood-red: rgba(112, 7, 8, 1);
+$platinum: rgba(232, 232, 232, 1);
+$golden-brown: rgba(143, 100, 44, 1);
+*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 480px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4{
+/*    font-family: 'DM Serif Text', serif;*/
+    font-family: 'New Tegomin', serif;
+    text-decoration: underline
+}
+
+p {
+    font-size: 0.75em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    
+}
+/*header info*/
+
+.logo img {
+    width: 200px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav button {
+    width: 50%;
+    margin: 10px;
+    border: 1px solid #700708ff;
+    border-radius: 8px;
+    background-color: #494949ff;
+    color: white;
+    
+}
+
+
+
+
+
+/*Main info*/
+main {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    
+    justify-items: center;
+}
+
+/* About Page Css*/
+
+.mast {
+    width: 100%;
+/*    height: 10%;*/
+    margin:0 auto;
+    padding: 50px 50px 50px 0px;
+/*    grid-column: 1/span 4;*/
+/*    grid-row: 1/span 1;*/
+    background-image: url(../img/moneyMast2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+/*    text-align: center;*/
+    
+    color: white;
+    
+}
+.art1 {
+    grid-column: 1/span 4;
+    grid-row: 1/span 1;
+/*    padding-top: 25px;*/
+}
+.art1 p {
+    padding: 20px;
+    text-align: left;
+    margin: auto;
+}
+.art2 {
+    grid-column: 1/span 4;
+    grid-row: 2/span 1;
+}
+.art2 h1 {
+    text-align: center;
+    padding: 20px;
+    display: block;
+}
+.art1 img,
+.art2 img,
+.art3 img {
+    grid-row: auto;
+    display: block;
+    clear: both;
+    margin: auto;
+    box-shadow: 5px 0px 20px 0px #888888;
+}
+.art2 p {
+    padding: 20px;
+    text-align: left;
+    margin: auto;
+}
+.art3 {
+    grid-column: 1/ span 4;
+    grid-row: 4/span 1;
+}
+.art3 h1 {
+    margin-left: 25%;
+    margin-right: 25%;
+/*    color: white;*/
+}
+.art3 p {
+    padding: 20px;
+    text-align: left;
+    margin: auto;
+}
+
+.section3 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: rgba(143, 100, 44, 0.4);
+    padding: 2%;
+}
+
+
+/*Portfolio Page Css*/
+
+.portfo{
+    padding: 50px 50px 50px 0px;
+    margin: auto;
+    grid-column: 1/span 4;
+    grid-row: 1/span 1;
+    background-image: url(../img/background-1430103_1280.png);
+    width: 100%;
+    text-align: center;
+    color: white;
+    
+}
+.portfo h2 {
+/*    background-color: #006341;*/
+    padding: 1em 1em 1em 1em;
+    color: white;
+    font-size: 1.5em;
+    width: 50%;
+    
+}
+.gallery {
+    width: 90%;
+    grid-column: 1/span 4;
+    grid-row: 2/span 2;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+}
+
+.courseGal {
+    clear: both;
+}
+.courseGal img {
+    padding: 5%;
+}
+.imgBox1 {
+    position: relative;
+    text-align: center;
+    
+}
+.picassa {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 5px 0px 20px 0px #888888;
+}
+.textOver1 {
+    color: rgba(232, 232, 232, 1);
+    font-size: 1.3em;
+    background-color: rgba(112, 7, 8, 1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+/*Footer begins*/
+.section1 p {
+    font-family: 'Rock Salt', cursive;
+}
+
+
+/*MEDIA QUERIES*/
+
+/*Tablet View*/
+@media only screen and (min-width: 560px) {
+    /*    abt page*/
+    p {
+        font-size: 1rem;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    nav button {
+        width: 250px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid blue;
+    }
+    .art1 {
+        padding: 25px;
+        overflow: hidden;
+    }
+    .art1 figure {
+        margin: 0 auto;
+        float: left;
+        margin: 0px 25px 25px 0px;
+    }
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+   .art1 p {
+        font-size: 1em;
+        margin: auto;
+        text-align: left;
+    }
+    .art2 {
+        padding: 25px;
+    }
+    .art2 figure{
+        margin: auto;
+        float: left;
+        margin: 0px 25px 25px 0px;
+    }
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .art2 p {
+        font-size: 1em;
+    }
+    .art3 {
+        padding: 25px;
+        
+    }
+    .art3 p {
+        font-size: 1em;
+        
+    }
+    .art3 figure{
+        margin: auto;
+        float: left;
+        margin: 0px 25px 25px 0px;
+    }
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    footer {
+        clear: both;
+    }
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+/*    portfolio page css*/
+    
+    .courseGal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .courseGal img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .picassa {
+        width: 400px;
+        object-fit: cover;
+    }
+
+}
+
+/*Desktop*/
+@media only screen and (min-width: 1280px) {
+    body {
+/*        background-color: yellow;*/
+    }
+    p {
+        font-size: 1.25rem;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1f;
+        grid-template-rows: auto;
+        padding: 0px;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .headR {
+        grid-column: 1/span 1;
+        grid-row: auto;
+    }
+    nav {
+        grid-column: 2/span 1;
+        grid-row: auto;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .mast {
+        grid-column: 1/span 2;
+        grid-row: auto;
+    }
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+/*    about page*/
+/* Portfolio Page*/
+    .portfo {
+        background-size: cover;
+    }
+    .portfo h2 {
+        font-size: 2em;
+    }
+     .courseGal {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .courseGal img {
+        width: 100%;
+/*        object-fit: cover;*/
+    }
+    .picassa {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+    }
+    .imgBox1 {
+        margin: 10px;
+    }
+
+}
+
 
